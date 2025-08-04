@@ -39,10 +39,10 @@ let defesaTotal = DEFESA_BASE + (nivel / 2); // Defesa total do personagem
 // Avaliação de Prontidão com Operadores Lógicos
 
 
-let vidaSuficiente = vida > 70 // 
-let ataqueForte = ataqueTotal > 60
-let nivelAvancado = nivel >= 10
-let podeEnfrentarGuardiao = vidaSuficiente && (ataqueForte || nivelAvancado)
+let vidaSuficiente = vida > 70 // Cálculo para determinar se o personagem tem vida suficiente
+let ataqueForte = ataqueTotal > 60 // Cálculo para determinar se o personagem tem ataque forte
+let nivelAvancado = nivel >= 10 // Cálculo para determinar se o personagem está no nível avançado
+let podeEnfrentarGuardiao = vidaSuficiente && (ataqueForte || nivelAvancado) // Cálculo para determinar se o personagem pode enfrentar o guardião
 
 
 
@@ -62,22 +62,22 @@ console.log(`O destino do reino está em suas mãos`);
 
 // === CONTINUAÇÃO DA SUA JORNADA DO NÍVEL 1 ===
 
-let vidaAtual = 100;
-let vidaMaxima = 100;
-let manaAtual = 100;
-let manaMaxima = 60;
-let experiencia = 1;
+let vidaAtual = 100; // Vida atual do personagem
+let vidaMaxima = 100; // Vida máxima do personagem
+let manaAtual = 100; // Poder atual do personagem
+let manaMaxima = 60; // Poder máximo do personagem
+let experiencia = 1; // Experiência do personagem
 
 
 // Novos atributos para batalha
-let forca = 30;
-let defesa = 30;
-let agilidade = 15;
-let combatesVencidos = 0;
+let forca = 30; // Força do personagem
+let defesa = 30; // Defesa do personagem
+let agilidade = 15; // Agilidade do personagem
+let combatesVencidos = 0; // Combates vencidos do personagem
 
 // Estado atual da história (continue de onde parou no Nível 1)
-let localAtual = "Torres Tortas";
-let missaoAtual = "Em busca da Vitória Royale";
+let localAtual = "Torres Tortas"; // Local atual do personagem
+let missaoAtual = "Em busca da Vitória Royale"; // Missão atual do personagem
 console.log("");
 
 
@@ -85,19 +85,19 @@ console.log("");
 console.log("🌅 CAPÍTULO 1: O Aviso dos Anciões");
 
 // Verificação baseada no poder atual do personagem
-if(manaAtual >= 100) {
+if(manaAtual >= 100) { // Se o poder atual do personagem for maior ou igual a 100
     console.log(`Parabéns ${nome}, devido ao seu poder atual você pode prosseguir na sua missão.`)
     
 }
 
 // Verificação de experiência
-if (experiencia > 0) {
+if (experiencia > 0) { // Se a experiência for maior que 0
     console.log(`⚔️Como você ja teve uma batalha, a classe ${classe} está hábita para você.`);
      
 }
 
 // Verifição de ouro
-if (ouro < 10) {
+if (ouro < 10) { // Se o ouro for menor que 10
     console.log(`Você encerra a sua jornada aqui, por não ter ouro o suficiente para proseguir`);
     
 }   
@@ -108,13 +108,13 @@ console.log("");
 console.log("🛡️ CAPÍTULO 2: A Encruzilhada do Destino");
 
 // Verificação baseada na sua vida atual
-if (vida >= 30) {
+if (vida >= 30) {   // Se a vida for maior ou igual a 30, obter recompensa
     console.log(`❤️Já que você ${nome}, tem a vida maior que 30, você ganha alguns pontos para a sua jornada.`);
-    ouro += 30;
-    ataqueTotal += 20;
+    ouro += 30; // Soma 30 de ouro
+    ataqueTotal += 20; // Soma 20 de ou
     console.log(`🪙Sua quantidade de ouro aumentou para ${ouro}, junto com seu ataque total para ${ataqueTotal} pontos. `);
 
-} else {
+} else { // Se não, remover 20 de outro
     console.log(`❤️Como você não esta com a vida maior que 30, você pode enfrentar um inimigo mais forte que você, isso faz você perder 20 de ouro.`);
     ouro -= 20;
     console.log(`🪙Quantidade de ouro agora: ${ouro}`);
@@ -122,14 +122,14 @@ if (vida >= 30) {
 }
 
 // Verificação baseada no seu nível 
-if(nivel >= 5) {
+if(nivel >= 5) { // Se o nível for maior ou igual a 5, obter recompensa
     console.log(`👍Parabéns herói, com o seu nível ${nivel} maior ou igual a 5, você ganhou um tesouro que tinha algumas recompensas dentro...`);
-    manaMaxima += 50;
-    forca += 50;
-    defesa += 50;
+    manaMaxima += 50; // Soma 50 de poder
+    forca += 50; // Soma 50 força
+    defesa += 50; // Soma 50 de defesa
     console.log(`Mana máxima aumentada para ${manaMaxima}. Força aumentada para ${forca}. E Defesa aumentada para ${defesa}.`);
         
-} else {
+} else { 
     console.log(`Procure aumentar o seu nível!!`);
     
 }
@@ -141,20 +141,20 @@ console.log("⚔️ CAPÍTULO 3: A Batalha Decisiva");
 let poderInimigo = 15;
 
 // Sistema de combate inteligente baseado na situação
-if (ataqueTotal >= 10) {
+if (ataqueTotal >= 10) { 
     console.log(`Com o seu ataque total sendo bom, ele causou um dano significativo no oponente🫣`);
     
 } else if (poderInimigo <= 10) {
     console.log(`${nome} sofre ${poderInimigo} de dano do inimigo, descendo 5 de vida...`);
     vida -= 5;
     
-} else if (agilidade >= 10){
+} else if (agilidade >= 10){ 
     console.log(`Com uma boa agilidade, ele consegue acertar um outro ataque `);
     poderInimigo -= forca;
     
 } else { 
     console.log(`${nome} prefere uma luta mais calculada e segura!`);
-    poderInimigo -= (ataqueTotal / 2)
+    poderInimigo -= (ataqueTotal / 2) 
     vida += 4 // Batalha mais segura, então recupera um pouco de vida
 
 }
@@ -172,13 +172,13 @@ console.log("");
 // [Aqui você implementa os 3 capítulos com os conceitos das etapas anteriores]
 
 // EPÍLOGO - Resultado final    
-if(poderInimigo <= 5) {
+if(poderInimigo <= 5) { // Se o poder do inimigo for menor ou igual a 5
     console.log(`PARABÉNS!!⚔️✨🥳 ${nome}, você acaba de alcançar a Vitória Royale.`);
-    experiencia += 500;
-    combatesVencidos++;
+    experiencia += 500; // Soma 500 de experiência
+    combatesVencidos++; // Soma mais 1 combates vencidos
     console.log(`E o herói chamado ${nome}, continua em crescimento...`);
 
-} else {
+} else { 
     console.log(`Infelizmente nosso héroi ${nome} perdeu a luta, mas ele consegue escapar e lutar novamente outro dia⚔️⚔️!!`);
     
 }
