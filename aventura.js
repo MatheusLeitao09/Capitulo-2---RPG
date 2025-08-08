@@ -185,3 +185,4 @@ if(poderInimigo <= 5) { // Se o poder do inimigo for menor ou igual a 5
 
 console.log("");
 console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!");
+console.log("");
