@@ -363,14 +363,28 @@ console.log("Pois " + nome + " havia demonstrado ser digno do título supremo.")
 console.log("🙅‍♂️ ARQUI-MAGO DA LÓGICA ETERNA 🙅‍♂️");
 
 
-
-
-
-
-
-
-
-
-
 console.log("");
 console.log("🎯 FIM DO NÍVEL 3 | AGUARDE FUTURAS AVENTURAS NA ACADEMIA DOS CÓDIGOS! 🎯");
+
+
+// Desafio extra: Gerar salas e inimigos aleatórios
+
+
+const salas = ["Adega", "Catacumbas", "Jardim interno"];
+const inimigos = ["Fantasma do Cavaleiro", "Feiticeira das Cinzas", "Aranha Venenosa Gigante"];
+
+
+// Escolher um sala e um inimigo aleatório
+
+
+const indiceSala = (Math.random() * salas.length) | 0
+const salasAleatorias = salas[indiceSala];
+
+
+const indiceInimigo = (Math.random() * inimigos.length) | 0
+const inimigosAleatorios = inimigos[indiceInimigo];
+
+
+console.log(`Você entro no(a) ${salasAleatorias}, e encontrou um(a) ${inimigosAleatorios}, se prepare!!`);
+
+
