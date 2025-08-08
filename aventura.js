@@ -192,7 +192,7 @@ console.log("");
 let inventario = ["Poção de Pulo", "Espada do trovão", "Armadura do Homem de Ferro"];
 let aliados = ["Mago elétrico", "P.E.K.K.A", "Arqueiro Mágico"];
 let inimigosEncontrados = ["Goblin lançeiro", "Cavaleiro sombrio ", "Mago de Fogo"];
-let salasCastelo = ["Sãlado do Trono", "Câmara das Joias", "Torre do Oráculo"];
+let salasCastelo = ["Salão do Trono", "Câmara das Joias", "Torre do Oráculo"];
 let tesouroColetado = [];
 
 console.log("🏰 === " + nome + " ADENTRA O CASTELO DOS ARRAYS ===");
@@ -224,3 +224,27 @@ let itemRemovido = inventario.pop(); // Remove do final
 console.log("📤 Item removido: " + itemRemovido);
 console.log("🎒 Inventário atual: " + inventario);
 
+// === CAPÍTULO 2: O RITUAL DA EXPLORAÇÃO ===
+console.log("");
+console.log("⚔️ CAPÍTULO 2: Explorando as Masmorras Maligna");
+
+// Explorando cada sala do castelo usando for tradicional
+console.log("🗺️ Começando exploração das " + salasCastelo.length + " salas místicas...");
+
+for (let i = 0; i < salasCastelo.length; i++) {
+console.log("🚪 Sala " + (i + 1) + ": " + salasCastelo[i]);
+
+// Lógica diferente para cada sala baseada no índice
+if (i === 0) {
+console.log(nome + " encontra um livro real!");
+experiencia += 50;
+} else if (i === 1) {
+console.log("💎 Jóias ultra raras com grandes poderes!");
+tesouroColetado.push("Jóia da Força");
+} else {
+console.log("⏰ O tempo está se distorcendo ao redor de " + nome + "!");
+vidaAtual -= 10; // Pequeno dano temporal
+}
+}
+
+console.log("📊 Exploração Finalizada! XP: " + experiencia + " | Vida: " + vidaAtual);
