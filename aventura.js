@@ -323,3 +323,54 @@ console.log("📊 Rodada " + (i + 1) + " - Dano: " + danoRecebido[i]);
 
 console.log(" Dano total causado: " + danoTotal);
 console.log(" Tesouros coletados: " + tesouroColetado.length + " itens lendários!");
+
+
+// === EPÍLOGO: O MESTRE DOS ARRAYS ===
+console.log("");
+console.log("👑 === EPÍLOGO: " + nome + " - CONQUISTADOR DO CASTELO ===");
+
+// Estatísticas finais da jornada
+console.log("📈 Estatísticas Finais da Aventura:");
+console.log("");
+console.log("• Nível alcançado: " + nivel);
+console.log("• Experiência total: " + experiencia);
+console.log("• Vida restante: " + vidaAtual + "/" + vidaMaxima);
+console.log("• Ouro acumulado: " + ouro);
+console.log("• Itens no inventário: " + inventario.length);
+console.log("• Aliados conquistados: " + aliados.length);
+console.log("• Tesouros épicos: " + tesouroColetado.length);
+
+console.log("");
+console.log("🌟 A LENDA CONTINUA...");
+console.log("Após conquistar o Castelo dos Arrays, " + nome + " emergiu transformado.");
+
+
+// === ADICIONE SUAS 10+ LINHAS ÉPICAS DE CONTINUAÇÃO AQUI ===
+
+console.log("");
+console.log("🌟 A LENDA CONTINUA...");
+console.log("Após conquistar o Castelo dos Arrays, " + nome + " emergiu completamente transformado.");
+console.log("O domínio que ele tinha sobre  as coleções arcanas fluía em suas veias como se fosse magia pura.")
+console.log("Cada repetição de seu código fortaleceu sua determinação, forjando-o como um meste.");
+console.log("Os arrays, antes simples, revelavam a ele segredos ancestrais da realidade.");
+console.log("Seus companheiros admiravam a forma como a ele transformava o caos em harmonia lógica.");
+console.log("O inventário, antes comun, agora exibia artefatos místicos com poderes recém-descobertos.");
+console.log("Contudo, o horizonte chamava por novas aventuras para o Mestre Dos Códigos Arcano.s");
+console.log("Diziam as lendas que torres de funções aguardavam sua chegada para serem dominadas.");
+console.log("E que relíquias épicas guardavam os segredos da programação orientada objetos.");
+console.log("A jornada estava longe de terminar, pois era o ínicio de uma opopeia grandiosa.");
+console.log("Pois " + nome + " havia demonstrado ser digno do título supremo.");
+console.log("🙅‍♂️ ARQUI-MAGO DA LÓGICA ETERNA 🙅‍♂️");
+
+
+
+
+
+
+
+
+
+
+
+console.log("");
+console.log("🎯 FIM DO NÍVEL 3 | AGUARDE FUTURAS AVENTURAS NA ACADEMIA DOS CÓDIGOS! 🎯");
