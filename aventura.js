@@ -274,3 +274,52 @@ experiencia += 40;
 }
 
 console.log("🎖️ Equipe completa com sucesso! Ouro: " + ouro + " | Vida máxima: " + vidaMaxima);
+
+
+// === CAPÍTULO 4: A BATALHA FINAL DOS ARRAYS ===
+console.log("");
+console.log("🐉 CAPÍTULO 4: Confronto com as Criaturas do Castelo");
+
+// Sistema de batalha usando arrays e for tradicional
+let inimigosBatalha = ["Lich de Gelo", "O mestre da Sombra da Tumba", "O devorador de Montanhas"];
+let danoRecebido = [];
+
+console.log("💀 " + nome + " enfrenta " + inimigosBatalha.length + " inimigos mega épicos!");
+console.log("");
+
+// Batalha usando for tradicional para controle preciso
+for (let i = 0; i < inimigosBatalha.length; i++) {
+let inimigo = inimigosBatalha[i];
+let dano = Math.floor(Math.random() * 25) + 15; // Dano entre 10 e 39
+
+console.log("⚔️ Rodada " + (i + 1) + " - Enfrentando: " + inimigo);
+console.log("💥 " + nome+ " causa " + dano + " de dano!");
+
+danoRecebido.push(dano); // Armazena dano para cálculos posteriores
+
+// Lógica especial para cada rodada baseada no índice
+if (i === 0) {
+console.log("💎 Primeira vitória! Gemmas de olho de Lich concedem bônus!");
+tesouroColetado.push("Olho de Lich");
+console.log("");
+} else if (i === 1) {
+console.log("🌑 Segunda batalha! As sombras drenam energia, mas " + nome + " resiste!");
+vidaAtual -= 30;
+console.log("");
+} else {
+console.log("🔥 Batalha final! O devorador de Montanhas recua! Vitória Royale alcançada!");
+experiencia += 150;
+tesouroColetado.push("Pele de pé de devorador de Montanha");
+}
+}
+
+console.log("");
+// Calculando estatísticas da batalha usando for tradicional
+let danoTotal = 0;
+for (let i = 0; i < danoRecebido.length; i++) {
+danoTotal += danoRecebido[i];
+console.log("📊 Rodada " + (i + 1) + " - Dano: " + danoRecebido[i]);
+}
+
+console.log(" Dano total causado: " + danoTotal);
+console.log(" Tesouros coletados: " + tesouroColetado.length + " itens lendários!");
