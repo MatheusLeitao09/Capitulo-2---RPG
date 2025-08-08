@@ -226,7 +226,7 @@ console.log("🎒 Inventário atual: " + inventario);
 
 // === CAPÍTULO 2: O RITUAL DA EXPLORAÇÃO ===
 console.log("");
-console.log("⚔️ CAPÍTULO 2: Explorando as Masmorras Maligna");
+console.log("⚔️ CAPÍTULO 2: Explorando as Masmorras Malignas");
 
 // Explorando cada sala do castelo usando for tradicional
 console.log("🗺️ Começando exploração das " + salasCastelo.length + " salas místicas...");
@@ -248,3 +248,29 @@ vidaAtual -= 10; // Pequeno dano temporal
 }
 
 console.log("📊 Exploração Finalizada! XP: " + experiencia + " | Vida: " + vidaAtual);
+
+// === CAPÍTULO 3: A UNIÃO DOS ALIADOS ===
+console.log("");
+console.log("🤝 CAPÍTULO 3: Reunindo os Aliados Arcanos");
+
+// Recrutando aliados com for tradicional
+console.log("🤴 " + nome + " convoca seus aliados para a grande batalha final:");
+
+for (let i = 0; i < aliados.length; i++) {
+let aliado = aliados[i];
+console.log("🙍‍♂️ Aliado " + (i + 1) + ": " + aliado + " se junta à missão!");
+
+// Cada posição no array determina habilidade especial
+if (i === 0) { // Primeiro aliado - Líder 
+console.log("🔮 Como líder mágico, " + aliado + " multiplica o poder da equipe!");
+ouro += 100;
+} else if (i === 1) { // Segundo aliado - Defensor
+console.log("🛡️ Como cavaleiro, " + aliado + " fortalece a resistência devido a sua armadura pesada!");
+vidaMaxima += 50;
+} else { // Demais aliados - Suporte
+console.log("🏹 Como suporte, " + aliado + " aprimora táticas de combate, com sua ajuda de ataques longos!");
+experiencia += 40;
+}
+}
+
+console.log("🎖️ Equipe completa com sucesso! Ouro: " + ouro + " | Vida máxima: " + vidaMaxima);
