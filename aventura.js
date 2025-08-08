@@ -186,3 +186,41 @@ if(poderInimigo <= 5) { // Se o poder do inimigo for menor ou igual a 5
 console.log("");
 console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!");
 console.log("");
+
+// === NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS ===
+// Inventário mágico - primeira coleção arcana
+let inventario = ["Poção de Pulo", "Espada do trovão", "Armadura do Homem de Ferro"];
+let aliados = ["Mago elétrico", "P.E.K.K.A", "Arqueiro Mágico"];
+let inimigosEncontrados = ["Goblin lançeiro", "Cavaleiro sombrio ", "Mago de Fogo"];
+let salasCastelo = ["Sãlado do Trono", "Câmara das Joias", "Torre do Oráculo"];
+let tesouroColetado = [];
+
+console.log("🏰 === " + nome + " ADENTRA O CASTELO DOS ARRAYS ===");
+console.log("Após as vitórias dos níveis anteriores, nosso herói chegou ao castelo lendário...");
+console.log("Inventário inicial: " + inventario.length + " itens mágicos");
+
+// === CAPÍTULO 1: DESCOBERTA DAS COLEÇÕES ARCANAS ===
+console.log("");
+console.log("🗝️ CAPÍTULO 1: Os Baús Arcanos do Castelo");
+
+
+// 3.5.1. Declaração e inicialização
+let pocoesEncontradas = ["Força em Dobro", "Veneno", "Clone"];
+let armadilhasAtiradas = []; // Array vazio - será preenchido na aventura
+
+// 3.5.2. Acesso e modificação de elementos
+console.log("🧪 Primeira poção encontrada: " + pocoesEncontradas[0]);
+console.log("⚗️ Total de poções mágicas: " + pocoesEncontradas.length);
+
+// Modificando elemento específico
+inventario[0] = "Pulo Duplo"; // Upgrade da poção!
+console.log("✨ " + nome + " aprimorou uma poção!");
+
+// 3.5.3. Métodos de array fundamentais
+inventario.push("Arco Mágico"); // Adiciona no final
+console.log("🏹 Novo item adicionado! Inventário: " + inventario);
+
+let itemRemovido = inventario.pop(); // Remove do final
+console.log("📤 Item removido: " + itemRemovido);
+console.log("🎒 Inventário atual: " + inventario);
+
